@@ -12,4 +12,8 @@
     <string name="identifier_is_too_short">Identifier is too short.</string>
     <string name="email_is_invalid">Email is invalid.</string>
     <string name="email_is_required">Email is required</string>
+    <string name="username_is_required">Username is required.</string>
+    <string name="username_can_only_include">Username can only include a-z, 0-9 and _ characters.</string>
+    <string name="username_is_too_short">Username is too short.</string>
+    <string name="username_is_too_long">Username is too long</string>
 </resources>

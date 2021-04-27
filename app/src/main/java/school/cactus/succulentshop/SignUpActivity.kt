@@ -10,7 +10,8 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignUpBinding
 
     val emailValidator = EmailValidator()
-    var passwordValidator = PasswordValidator()
+    val passwordValidator = PasswordValidator()
+    val usernameValidator = UsernameValidator()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,15 +35,7 @@ class SignUpActivity : AppCompatActivity() {
                     }
                 }
 
-                when {
-                    username.isEmpty() -> {
-                        binding.usernameInputLayout.error = "Bu alan boş olamaz"
-                    }
-                    else -> {
-                        binding.usernameInputLayout.error = null
-                        binding.emailInputLayout.isErrorEnabled = false
-                    }
-                }
+                validateUserName()
             }
         }
     }
@@ -55,13 +48,9 @@ class SignUpActivity : AppCompatActivity() {
 
 
 
-    private fun validateEmail(){
-        binding.emailInputLayout.let {
-            val errorMessage = emailValidator.validate(it.editText!!.text.toString())
-            it.error= errorMessage?.resolveAsString()
-            it.isErrorEnabled = errorMessage != null
-        }
-    }
+    private fun validateEmail() = validate(binding.emailInputLayout, emailValidator)
+
+    private fun validateUserName() = validate(binding.usernameInputLayout, usernameValidator)
 
     private fun validatePassword(){
         binding.passwordInputLayout.let{
