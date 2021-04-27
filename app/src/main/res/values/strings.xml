@@ -10,4 +10,6 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="this_field_is_required">This field is required.</string>
     <string name="identifier_is_too_short">Identifier is too short.</string>
+    <string name="email_is_invalid">Email is invalid.</string>
+    <string name="email_is_required">Email is required</string>
 </resources>

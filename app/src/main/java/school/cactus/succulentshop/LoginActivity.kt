@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
 import school.cactus.succulentshop.databinding.ActivityLoginBinding
 
-class LoginActivity : AppCompatActivity() {
+class   LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
     private val identifierValidator = IdentifierValidator()
@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun TextInputLayout.validate() {
-        val errorMessage = validator().validate(editText!!.text.toString())
+        val errorMessage = validator().validateLogin(editText!!.text.toString())
         error = errorMessage?.resolveAsString()
         isErrorEnabled = errorMessage != null
     }

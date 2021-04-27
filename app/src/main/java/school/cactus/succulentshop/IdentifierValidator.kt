@@ -7,4 +7,12 @@ class IdentifierValidator : Validator {
         field.length < 5 -> R.string.identifier_is_too_short
         else -> null
     }
+
+    override fun validateLogin(field: String): Int? {
+        TODO("Not yet implemented")
+    }
+
+    override fun validateSingIn(field: String): Int? {
+        TODO("Not yet implemented")
+    }
 }

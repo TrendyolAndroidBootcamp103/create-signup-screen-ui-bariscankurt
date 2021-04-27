@@ -11,4 +11,6 @@
     <string name="already_have_an_account">Zaten hesabınız var mı?</string>
     <string name="this_field_is_required">Bu alan zorunludur.</string>
     <string name="identifier_is_too_short">Identifier is too short.</string>
+    <string name="email_is_invalid">Email hatalı.</string>
+    <string name="email_is_required">Email gerekiyor.</string>
 </resources>
