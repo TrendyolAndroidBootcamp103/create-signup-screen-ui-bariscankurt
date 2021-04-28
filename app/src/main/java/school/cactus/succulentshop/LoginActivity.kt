@@ -9,7 +9,7 @@ import school.cactus.succulentshop.databinding.ActivityLoginBinding
 class   LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
-    private val identifierValidator = IdentifierValidator()
+    private val emailValidator = EmailValidator()
     private val passwordValidator = PasswordValidator()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,7 +44,7 @@ class   LoginActivity : AppCompatActivity() {
     }
 
     private fun TextInputLayout.validator() = when (this) {
-        binding.identifierInputLayout -> identifierValidator
+        binding.identifierInputLayout -> emailValidator
         binding.passwordInputLayout -> passwordValidator
         else -> throw IllegalArgumentException("Cannot find any validator for the given TextInputLayout")
     }

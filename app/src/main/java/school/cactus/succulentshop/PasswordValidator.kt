@@ -1,11 +1,6 @@
 package school.cactus.succulentshop
 
 class PasswordValidator : Validator {
-    override fun validate(field: String) = when {
-        field.isEmpty() -> R.string.password_is_required
-
-        else -> null
-    }
 
     override fun validateLogin(field: String): Int? = when{
         field.isEmpty() -> R.string.password_is_required

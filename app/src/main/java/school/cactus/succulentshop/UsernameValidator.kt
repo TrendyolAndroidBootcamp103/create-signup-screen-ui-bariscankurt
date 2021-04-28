@@ -1,9 +1,7 @@
 package school.cactus.succulentshop
 
 class UsernameValidator : Validator {
-    override fun validate(field: String): Int? {
-        TODO("Not yet implemented")
-    }
+
 
     override fun validateLogin(field: String): Int? = when{
         field.isEmpty() -> R.string.username_is_required
