@@ -1,5 +1,6 @@
 package school.cactus.succulentshop
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.textfield.TextInputLayout
@@ -27,7 +28,15 @@ class SignUpActivity : AppCompatActivity() {
                 binding.usernameInputLayout.validate()
                 binding.passwordInputLayout.validate()
             }
+            logInButton.setOnClickListener{
+                navigateToLogInActivity()
+            }
         }
+    }
+
+    private fun navigateToLogInActivity(){
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 
     private fun TextInputLayout.validate(){
