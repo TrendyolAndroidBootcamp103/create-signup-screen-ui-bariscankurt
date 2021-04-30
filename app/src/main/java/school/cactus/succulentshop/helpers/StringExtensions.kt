@@ -1,4 +1,4 @@
-package school.cactus.succulentshop
+package school.cactus.succulentshop.helpers
 
 fun String.isContainSpecialChar(): Boolean{
 

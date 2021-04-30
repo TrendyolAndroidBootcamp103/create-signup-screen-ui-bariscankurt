@@ -1,5 +1,7 @@
 package school.cactus.succulentshop
 
+import school.cactus.succulentshop.helpers.oneDigitOneSpecialOneLowerOneUpper
+
 class PasswordValidator : Validator {
 
     override fun validateLogin(field: String): Int? = when{

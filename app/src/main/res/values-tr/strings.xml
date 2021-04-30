@@ -13,4 +13,12 @@
     <string name="identifier_is_too_short">Identifier is too short.</string>
     <string name="email_is_invalid">Email hatalı.</string>
     <string name="email_is_required">Email gerekiyor.</string>
+    <string name="username_is_required">Kullanıcı adı gerekiyor.</string>
+    <string name="username_can_only_include">Kullanıcı adı sadece a-z, 0-9 ve _ karakterlerini içerebilir.</string>
+    <string name="username_is_too_short">Kullanıcı adı çok kısa.</string>
+    <string name="username_is_too_long">Kullanıcı adı çok uzun.</string>
+    <string name="password_is_required">Şifre gerekiyor.</string>
+    <string name="password_is_too_short">Şifre çok kısa.</string>
+    <string name="password_is_too_long">Şifre çok uzun.</string>
+    <string name="password_must_contains">Şifre mutlaka bir rakam, bir büyük harf, bir küçük harf ve bir sembol içermelidir.</string>
 </resources>
