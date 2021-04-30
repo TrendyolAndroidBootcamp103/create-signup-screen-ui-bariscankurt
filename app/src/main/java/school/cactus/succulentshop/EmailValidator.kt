@@ -3,7 +3,7 @@ package school.cactus.succulentshop
 class EmailValidator: Validator {
 
     override fun validateLogin(field: String): Int? = when{
-        field.isEmpty() -> R.string.this_field_is_required
+        field.isEmpty() -> R.string.email_is_required
         field.length <= 5 -> R.string.email_is_invalid
         field.length >= 50 -> R.string.email_is_invalid
         field.contains("@",ignoreCase = true).not() -> R.string.email_is_invalid
