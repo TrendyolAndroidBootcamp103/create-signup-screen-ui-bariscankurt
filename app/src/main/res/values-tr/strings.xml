@@ -21,4 +21,6 @@
     <string name="password_is_too_short">Şifre çok kısa.</string>
     <string name="password_is_too_long">Şifre çok uzun.</string>
     <string name="password_must_contains">Şifre mutlaka bir rakam, bir büyük harf, bir küçük harf ve bir sembol içermelidir.</string>
+    <string name="add_to_cart">Sepete ekle</string>
+    <string name="related_products">Benzer ürünler:</string>
 </resources>

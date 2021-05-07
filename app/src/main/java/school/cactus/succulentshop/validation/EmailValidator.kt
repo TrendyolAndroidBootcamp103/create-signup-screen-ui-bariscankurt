@@ -1,4 +1,6 @@
-package school.cactus.succulentshop
+package school.cactus.succulentshop.validation
+
+import school.cactus.succulentshop.R
 
 class EmailValidator: Validator {
 

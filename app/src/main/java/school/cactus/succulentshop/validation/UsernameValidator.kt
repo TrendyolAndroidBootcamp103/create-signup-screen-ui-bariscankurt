@@ -1,5 +1,6 @@
-package school.cactus.succulentshop
+package school.cactus.succulentshop.validation
 
+import school.cactus.succulentshop.R
 import school.cactus.succulentshop.helpers.isContainSpecialChar
 
 class UsernameValidator : Validator {
